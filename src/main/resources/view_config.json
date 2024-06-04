@@ -1,0 +1,29 @@
+{
+  "textAreaConfig": {
+    "borderThickness": 3,
+    "borderLength": 3,
+    "borderSpacing": 3
+  },
+  "mainWindowConfig": {
+    "windowName": "Photoshop",
+    "windowPrefWidth": 800,
+    "windowPrefHeight": 800,
+    "windowMinWidth": 640,
+    "windowMinHeight": 480,
+    "scrollPaneBorderThickness": 10
+  },
+  "toolsAreaConfig": {
+    "areaBackgroundColor": "#D9D9D9",
+    "buttonsBackgroundColor": "#B7B7B5",
+    "toolSize": 32
+  },
+  "menuAreaConfig": {
+    "fontName": "Go",
+    "fontSize": 14,
+    "fontType": "Bold",
+    "menuBackgroundColor": "#D9D9D9",
+    "buttonsFontColor": "#242121",
+    "undoLabel": "Undo",
+    "redoLabel": "Redo"
+  }
+}

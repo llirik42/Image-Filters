@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Hand",
+    "description": "Инструмент для передвижения по изображению с помощью мыши(зажимая и сдвигая), если не активен - нажатие по изображению меняет местами исходное изображение и полученное применением преобразований",
+    "tip": "hand",
+    "icon": "/icons/hand.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.HandController",
+    "isToggle": true,
+    "hand": true
+  },
+  {
+    "name": "Undo/Redo",
+    "description": "Менятет местами исходное изображение и изображение, полученное в результате применения преобразований",
+    "tip": "undo",
+    "back": true,
+    "selectedTip": "redo",
+    "icon": "/icons/undo.png",
+    "selectedIcon": "/icons/redo.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.BackController"
+  },
+  {
+    "name": "1:1",
+    "description": "Режим отображения пиксель к пикселю",
+    "tip": "1:1",
+    "icon": "/icons/one-to-one.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.OneToOneController",
+    "group": 1,
+    "1:1": true
+  },
+  {
+    "name": "To window size",
+    "description": "Режим отображения, который, сохраняя пропорции, изменяет размер изображение в соответствии с размером области просмотра изображений",
+    "tip": "to window size",
+    "icon": "/icons/to-window-size.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.ToWindowSizeController",
+    "group": 1,
+    "onWindowSize": true
+  },
+  {
+    "name": "Rotation",
+    "description": "Инструмент для поворота изображения на определенный угол от -180 до 180 градусов",
+    "tip": "rotation",
+    "icon": "/icons/rotation.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.RotationController"
+  },
+  {
+    "name": "Black-And-White",
+    "description": "Инструмент для преобразования изображение в чёрно-белое",
+    "tip": "black-and-white",
+    "icon": "/icons/black-and-white.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.BlackAndWhiteController"
+  },
+  {
+    "name": "Inversion",
+    "description": "Инструмент для преобразования изображения в негативное",
+    "tip": "Inversion",
+    "icon": "/icons/inversion.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.InversionController"
+  },
+  {
+    "name": "Gamma-correction",
+    "description": "Инструмент для гамма-коррекции изображения. Gamma - параметр коррекции, чем он больше - тем больше изображение будет темнее - пределы от 0.1 до 10",
+    "tip": "gamma-correction",
+    "icon": "/icons/gamma-correction.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.GammaCorrectionController"
+  },
+  {
+    "name": "Sharpening",
+    "description": "Фильтр, увеличивающий резкость изображений",
+    "tip": "sharpening",
+    "icon": "/icons/sharpening.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.SharpeningController"
+  },
+  {
+    "name": "Edge detection",
+    "description": "Фильтр выделяющий границы изображений. Имеется различные реализации, которые могут быть выбраны. Параметр Binarization - отвечает за чувствительность фильтра - пределы от 0 до 1000",
+    "tip": "edge detection",
+    "icon": "/icons/edge-detection.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.EdgeDetectionController"
+  },
+  {
+    "name": "Embossing",
+    "description": "Фильтр эффекта тиснения изображения. Параметр Brightness - яркость фона - от 0 до 255",
+    "tip": "embossing",
+    "icon": "/icons/embossing.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.EmbossingController"
+  },
+  {
+    "name": "Blur",
+    "description": "Фильтр эффекта Гаусового размытия изображения. Параметры Window size / Sigma отвечают степень размытия. window size - от 3 до 11 нечетный, sigma от 0.1 до 5",
+    "tip": "blur",
+    "icon": "/icons/blur.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.BlurController"
+  },
+  {
+    "name": "Watercoloring",
+    "description": "Фильтр, преобразовывающий изображение, будто его нарисовали акварелью. Параметр Window size отвечает за степень \"акварельности\" - от 3 до 15",
+    "tip": "watercoloring",
+    "icon": "/icons/watercoloring.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.WatercoloringController"
+  },
+  {
+    "name": "Floyd-Steinberg dithering",
+    "description": "Дизеринг Флойда-Стеинберга. Параметры Red/Blue/Green quantization отвечают за количество определенных вариантов цвета в палитре итогового изображения - от 2 до 128",
+    "tip": "Floyd-Steinberg dithering",
+    "icon": "/icons/dithering-1.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.FloydSteinbergDitheringController"
+  },
+  {
+    "name": "Ordered dithering",
+    "description": "Упорядоченный дизеринг. Параметры Red/Blue/Green quantization отвечают за количество определенных вариантов цвета в палитре итогового изображения - от 2 до 128",
+    "tip": "ordered dithering",
+    "icon": "/icons/dithering-2.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.OrderedDitheringController"
+  },
+  {
+    "name": "Wave filter",
+    "description": "Фильтр эффекта волн. Параметры X/Y amplitude отвечают за размер волн - при 0 волн нет вообще - от 0 до 100, X/Y frequency отвечают за частоту волн - при 0 изображение просто сместиться на амплитуду от 0 до 10",
+    "tip": "wave filter",
+    "icon": "/icons/wave-filter.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.WaveFilterController"
+  },
+  {
+    "name": "Glass effect",
+    "description": "Фильтр эффекта матового стекла. Параметр Spread отвечает за видимость готового изображения \"за стеклом\" - от 0 до 50",
+    "tip": "glass effect",
+    "icon": "/icons/glass-effect.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.GlassEffectController"
+  },
+  {
+    "name": "Fish-eye effect",
+    "description": "Эффект рыбьего глаза. Параметр Amplitude отвечает за закруглённость итогового изображения - от 0.5 до 12",
+    "tip": "fish-eye effect",
+    "icon": "/icons/fisheye-effect.png",
+    "controller": "ru.nsu.icg.lab2.gui.controller.tools.FisheyeEffectController"
+  }
+]
